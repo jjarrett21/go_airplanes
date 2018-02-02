@@ -27,6 +27,13 @@ Once their to run the main application you will need to do issue the following c
 go run main.go
 ```
 
+Or you can run the docker with
+
+```
+docker run --rm -it -p 8080:8080 jjarrett21/go_airplanes
+```
+
+
 Which should start the api on your localhost at port :8080
 
 * [airplanes](http://localhost:8080)
