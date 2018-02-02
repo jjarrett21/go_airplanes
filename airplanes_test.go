@@ -17,7 +17,7 @@ var goVersion = runtime.Version()
 func TestHttpURL(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 	router := gin.New()
-	router.GET("/airplanes", func(c *gin.Context) { c.String(http.StatusOK, "Success") })
+	router.GET("/airplanes/", func(c *gin.Context) { c.String(http.StatusOK, "Success") })
 
 	go func() {
 		assert.NoError(t, router.Run())
