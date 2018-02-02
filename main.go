@@ -15,16 +15,16 @@ var err error
 
 // Airplane object.
 type Airplane struct {
-	ID               uint   `json:"id"`
+	ID               int    `json:"id"`
 	Manufacturer     string `json:"manufacturer"`
 	Model            string `json:"model"`
-	Year             uint   `json:"year"`
+	Year             int    `json:"year"`
 	SinglePilotRated bool   `json:"singlepilotrated"`
-	TopSpeed         uint   `json:"topspeed"`
+	TopSpeed         int    `json:"topspeed"`
 	Engine           string `json:"engine"`
 }
 
-// Main function that...
+// Main function that setups our database and http requests
 func main() {
 
 	worker.ParseFlags() //To use the docker dependency
@@ -51,6 +51,7 @@ func main() {
 
 // CreateAirplane : Allows the user to create an airplane in the db
 // System will only populate provided values and will leave the rest blank
+// Binding the object to Json and returning the expected '200' status
 func CreateAirplane(c *gin.Context) {
 	var airplane Airplane
 	c.BindJSON(&airplane)
@@ -97,7 +98,7 @@ func GetAirplanes(c *gin.Context) {
 	}
 }
 
-// DestroyAirplanes : Allows user to delete airplanes from the db.
+// DestroyAirplanes : Allows user to delete airplanes from the databse by Id #.
 func DestroyAirplanes(c *gin.Context) {
 	id := c.Params.ByName("id")
 	var airplane Airplane
