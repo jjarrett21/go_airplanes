@@ -1,0 +1,58 @@
+hash: 6cca3f1586da64760319a591044d9ad09b05011a9f79c3a4010d6d841dc69d06
+updated: 2018-02-02T07:01:01.673873809Z
+imports:
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/gin-gonic/gin
+  version: 783c7ee9c14eac0e65b501664b4f553291556b43
+  subpackages:
+  - binding
+  - json
+  - render
+- name: github.com/golang/protobuf
+  version: 925541529c1fa6821df4e44ce2723319eb2be768
+  subpackages:
+  - proto
+- name: github.com/iron-io/iron_go
+  version: c3d16c1c27568ed0a6d8e4c8b516e571d4b43116
+  subpackages:
+  - api
+  - config
+  - worker
+- name: github.com/jinzhu/gorm
+  version: ca46ec0770003aab3c0ed7d7b336643362221c21
+  subpackages:
+  - dialects/sqlite
+- name: github.com/jinzhu/inflection
+  version: 1c35d901db3da928c72a72d8458480cc9ade058f
+- name: github.com/json-iterator/go
+  version: bca911dae0735b8220ddb30236e11cff9d959f19
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/mattn/go-sqlite3
+  version: a35b097634ab3a42fac3f7a1c5ed1f898d5cdd5f
+- name: github.com/ugorji/go
+  version: 105e48374b52c9b820c27b847c43fd30cce16534
+  subpackages:
+  - codec
+- name: golang.org/x/sys
+  version: 8f27ce8a604014414f8dfffc25cbcde83a3f2216
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/yaml.v2
+  version: d670f9405373e636a5a2765eea47fac0c9bc91a4
+testImports:
+- name: github.com/davecgh/go-spew
+  version: db69d09d2c587e9b9677f991dfcab1fc24d9086e
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 12b6f73e6084dad08a7c6e575284b177ecafbc71
+  subpackages:
+  - assert
